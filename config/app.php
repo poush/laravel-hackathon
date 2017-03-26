@@ -179,7 +179,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        
+        // API - TESTER
+        Asvae\ApiTester\ServiceProvider::class,
     ],
 
     /*
