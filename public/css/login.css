@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(rgba(46, 10, 106, 0.75), rgba(46, 10, 106, 0.75)), url('/images/loginwallpaper.jpg') no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+
+}
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.form-signin .form-signin-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin #username {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin #password {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}

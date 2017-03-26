@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
@@ -182,6 +183,8 @@ return [
         
         // API - TESTER
         Asvae\ApiTester\ServiceProvider::class,
+
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -234,6 +237,9 @@ return [
          * Package Facades...
          */
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
