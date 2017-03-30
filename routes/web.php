@@ -20,4 +20,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::group(['prefix' => 'book'], function(){
+
+	Route::get('/', function(){
+		return view('book.index');
+	});
+
+	Route::get('/slot/{equipment_id}', 'BookingController@showSlotBooking');
+
+	Route::post('/confirm', 'BookingController@confirm');
+
+});
+
+
 Route::get('/login', 'LoginController@showLoginForm');
