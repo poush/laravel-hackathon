@@ -32,12 +32,16 @@ class AddBookingsTable extends Migration
                 3 => Waiting for Approval from Director
                 4 => Waiting for Approval from Head Office
                 5 => ___ Will be used if required ____
-                6 => ___ Will be used if required ____
-                7 => All Approval Done
-                8 => Waiting for payment
-                9 => Booking complete.
+                6 => All Approval Done
+                6 => Waiting for payment
+                8 => Booking complete.
+                9 => Cancelled/Rejected.
     
+            @TODO: 
+                Ask them about available time to make payment.
             */
+
+
             $table->timestamps();
         });
     }
