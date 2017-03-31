@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
     		[
     			'name'  	=> 'Piyush',
     			'email'		=> 'me@ipiyush.com',
-    			'password'	=> '12345678',
+    			'password'	=> Hash::make('12345678'),
     			'power'		=> 0
     		]
     	);
@@ -26,19 +26,37 @@ class UsersTableSeeder extends Seeder
     		[
     			'name'  	=> 'Piyush_Scientist',
     			'email'		=> 's@s.com',
-    			'password'	=> '12345678',
+    			'password'	=> Hash::make('12345678'),
     			'power'		=> 1
     		]
     	);
 
     	User::create( 
     		[
-    			'name'  	=> 'Piyush',
-    			'email'		=> 'me@ipiyush.com',
-    			'password'	=> '12345678',
-    			'power'		=> 0
+    			'name'  	=> 'Piyush Director',
+    			'email'		=> 'abcxyz@gmal.com',
+    			'password'	=> Hash::make('12345678'),
+    			'power'		=> 2
     		]
     	);
+
+        User::create(
+            [
+                'name'  	=> 'Piyush Admin',
+                'email'		=> 'abcxhbyz@gmal.com',
+                'password'	=> Hash::make('12345678'),
+                'power'		=> 3
+            ]
+        );
+
+        User::create(
+            [
+                'name'  	=> 'Piyush Head',
+                'email'		=> 'aabbccxxyyzz@gmal.com',
+                'password'	=> Hash::make('12345678'),
+                'power'		=> 4
+            ]
+        );
 
     }
 }

@@ -33,7 +33,7 @@ class AddBookingsTable extends Migration
                 4 => Waiting for Approval from Head Office
                 5 => ___ Will be used if required ____
                 6 => All Approval Done
-                6 => Waiting for payment
+                7 => Waiting for payment
                 8 => Booking complete.
                 9 => Cancelled/Rejected.
     

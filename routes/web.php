@@ -1,5 +1,5 @@
 <?php
-
+use App\Equipment;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +24,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'book'], function(){
 
 	Route::get('/', function(){
-		return view('book.index');
+		return view('book.index')->withEquipments( Equipment::all() );
 	});
 
 	Route::get('/slot/{equipment_id}', 'BookingController@showSlotBooking');

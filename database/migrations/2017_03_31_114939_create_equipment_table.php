@@ -20,7 +20,7 @@ class CreateEquipmentTable extends Migration
             $table->integer('scientist_id')->unsigned();
             $table->integer('institute_id')->unsigned();
             $table->float('charges');
-            $table->boolean('under_maintence')->default(0);
+            $table->boolean('under_maintenance')->default(0);
             $table->boolean('published')->default(1);
             $table->timestamps();
         });

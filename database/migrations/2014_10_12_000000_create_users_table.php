@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name')->default('User');
             $table->string('email')->unique();
             $table->string('password');
-            $table->shortInteger('power')->default(0);
+            $table->smallInteger('power')->default(0);
             // 0 => normal users (extramural users)
             // 1 => Scientists
             // 2 => Director of Institute

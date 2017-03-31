@@ -14,7 +14,7 @@ class Booking extends Model
 
     public function findAvailabilityFrom(Carbon $date){
 
-        Equipment::where('')
+        Equipment::where('');
 
     }
 
