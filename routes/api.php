@@ -15,6 +15,8 @@ $api->version('v1', function (Router $api) {
     });
 
     $api->group(['middleware' => 'jwt.auth'], function(Router $api) {
+
+
         $api->get('protected', function() {
             return response()->json([
                 'message' => 'Access to this item is only for authenticated user. Provide a token in your request!'

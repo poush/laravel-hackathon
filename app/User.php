@@ -38,4 +38,20 @@ class User extends Authenticatable
     {
         $this->attributes['password'] = Hash::make($value);
     }
+
+    public function isScientist(){
+        return $this->power == 1;
+    }
+
+    public function isAdmin(){
+        return $this->power == 3;
+    }
+
+    public function isDirector(){
+        return $this->power == 2;
+    }
+
+    public function isHead(){
+        return $this->power == 4;
+    }
 }
